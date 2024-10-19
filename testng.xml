@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/acer/IdeaProjects/Maven_TestNG_Practice">
+        <classes>
+            <class name="testngbasic.BeforeAfterMethod">
+                <methods>
+                    <include name="VerifyOpenAmazonUrl"/>
+                    <include name="verifyOpenSeleniumUrl"/>
+                    <include name="verifyOpenTestNGUrl"/>
+                </methods>
+            </class>
+            <class name="testngbasic.BeforeAfterMethodAnnotation">
+                <methods>
+                    <include name="verifyMethod_1"/>
+                    <include name="verifyMethod_3"/>
+                </methods>
+            </class>
+            <class name="testngbasic.DependsOnGroup">
+                <methods>
+                    <include name="verifyPayment"/>
+                </methods>
+            </class>
+            <class name="testngbasic.DependsOnMethod">
+                <methods>
+                    <include name="verfyLogin"/>
+                    <include name="verifySignUp"/>
+                </methods>
+            </class>
+            <class name="testngbasic.InvocationCount">
+                <methods>
+                    <include name="verifyInvocationCount"/>
+                </methods>
+            </class>
+            <class name="testngbasic.NeedOfTestNG">
+                <methods>
+                    <include name="openAmazonUrl"/>
+                    <include name="openSeleniumUrl"/>
+                    <include name="openTestNGUrl"/>
+                </methods>
+            </class>
+            <class name="testngbasic.PriorityExample">
+                <methods>
+                    <include name="testCaseA"/>
+                    <include name="testCaseG"/>
+                    <include name="testCaseT"/>
+                    <include name="testCaseR"/>
+                    <include name="testCaseB"/>
+                    <include name="testCaseV"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
